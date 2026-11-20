@@ -20,7 +20,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   try {
     const note = await client.note.findUnique({ where: { id: noteId } });
-    if (!note || note.authorId !== session.user.uid) return res.status(403).end();
+    if (note?.authorId !== session.user.uid) return res.status(403).end();
 
     await client.note.delete({ where: { id: noteId } });
     return res.status(200).end();

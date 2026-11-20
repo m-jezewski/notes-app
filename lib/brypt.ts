@@ -7,10 +7,10 @@ function peppered(password: string): string {
   return `${password}${PEPPER}`;
 }
 
-export async function hashPassword(password: string): Promise<string> {
+export function hashPassword(password: string): Promise<string> {
   return bcrypt.hash(peppered(password), SALT_ROUNDS);
 }
 
-export async function verifyPassword(password: string, hash: string): Promise<boolean> {
+export function verifyPassword(password: string, hash: string): Promise<boolean> {
   return bcrypt.compare(peppered(password), hash);
 }

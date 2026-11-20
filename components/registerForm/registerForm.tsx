@@ -2,8 +2,9 @@ import { Form, Formik } from 'formik';
 import { toFormikValidationSchema } from 'zod-formik-adapter';
 
 import { TextInput } from '../textInput/textInput';
-import { registerSchema } from '@/lib/validations/auth';
+
 import { useCreateUserMutation } from '@/hooks/useCreateUserMutation';
+import { registerSchema } from '@/lib/validations/auth';
 
 export const RegisterForm = () => {
   const createUserMutation = useCreateUserMutation();

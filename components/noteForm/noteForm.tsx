@@ -3,10 +3,11 @@ import { toFormikValidationSchema } from 'zod-formik-adapter';
 
 import { TextInput } from '../textInput/textInput';
 
-import { noteFormSchema } from '@/lib/validations/note';
 
 import type { NoteFormValues } from '@/lib/validations/note';
 import type { UseMutationResult } from '@tanstack/react-query';
+
+import { noteFormSchema } from '@/lib/validations/note';
 
 interface NoteFormProps<TMutation> {
   readonly mutation: UseMutationResult<void, unknown, TMutation | NoteFormValues, unknown>;

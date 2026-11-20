@@ -2,10 +2,10 @@ import { Prisma } from '@prisma/client';
 
 import type { NextApiRequest, NextApiResponse } from 'next';
 
+import initialNotes from '@/data/initialContent.json';
 import { hashPassword } from '@/lib/brypt';
 import { client } from '@/lib/prismadb';
 import { registerSchema } from '@/lib/validations/auth';
-import initialNotes from '@/data/initialContent.json';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== 'POST') return res.status(405).end();

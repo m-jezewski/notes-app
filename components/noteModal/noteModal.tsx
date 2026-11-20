@@ -4,9 +4,9 @@ import { useState, useEffect } from 'react';
 import { Modal } from '../modal/modal';
 import { NoteForm } from '../noteForm/noteForm';
 
+import type { NoteFormValues } from '@/lib/validations/note';
 import type { Note } from '@prisma/client';
 import type { UseMutationResult } from '@tanstack/react-query';
-import type { NoteFormValues } from '@/lib/validations/note';
 import type { Dispatch, SetStateAction } from 'react';
 
 import { useEditNoteMutation } from '@/hooks/useEditNoteMutation';

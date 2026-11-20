@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/require-await -- callbacks */
 /* eslint-disable require-await -- callbacks*/
+import { PrismaAdapter } from '@next-auth/prisma-adapter';
 import NextAuth from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
-import { PrismaAdapter } from '@next-auth/prisma-adapter';
 
 import type { NextAuthOptions } from 'next-auth';
 
