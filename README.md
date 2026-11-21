@@ -1,7 +1,7 @@
-# MemoPro
-MemoPro is a notes application built using Next.js and Prisma ORM.
+# Notes app
+Quick notes application built using Next.js and Prisma ORM.
 
-With MemoPro, users can create, delete, and edit notes, give them a title, and sort them around the screen in any order they want.
+Users can create, delete, and edit notes, give them a title, and sort them around the screen in any order they want.
 
 ## Tech/Libraries
 - [Next.js](https://nextjs.org/) - React framework for building server-side rendered and static web applications.
@@ -15,7 +15,7 @@ With MemoPro, users can create, delete, and edit notes, give them a title, and s
 - [Dnd-kit](https://dndkit.com/) - Drag and drop library for React.
 
 ## Live Demo
-You can try MemoPro by visiting the live demo at 
+You can try out the app by visiting the live demo at 
 > https://memo-pro.vercel.app/.
 
 And log in with demo acc:
@@ -35,7 +35,7 @@ password:   test123
 
 
 ## Installation
-> git clone https://github.com/m-jezewski/memo-pro.git <br />
+> git clone https://github.com/m-jezewski/notes-app.git <br />
 
 Fill your .env variables: <br />
 ```
