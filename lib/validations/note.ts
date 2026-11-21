@@ -6,7 +6,7 @@ export const deleteNoteSchema = z.object({
 
 export const noteFormSchema = z.object({
   title: z.string().max(40, 'Title must be less than 40 characters').optional(),
-  content: z.string().min(1, 'Note content is required').max(75000, 'Note content is too long'),
+  content: z.string('Note content is required').min(1, 'Note content is required').max(75000, 'Note content is too long'),
 });
 
 export const editNoteSchema = noteFormSchema.extend({
